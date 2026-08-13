@@ -1,0 +1,315 @@
+Design a premium corporate website for MAYUR UNIQUOTERS LIMITED, a global leather manufacturer and material solutions company.
+
+Create EXACTLY TWO COMPLETE DESKTOP WEB PAGES:
+
+1. ABOUT US
+2. PRODUCTS & CATEGORY LISTING
+
+The website must feel like a high-end international leather/material brand — sophisticated, editorial, luxurious and extremely polished.
+
+IMPORTANT:
+Do NOT copy the supplied reference websites literally.
+Use them only as structural inspiration.
+Create a new visual identity and a more refined UX.
+
+REFERENCE DIRECTION:
+The supplied PDF establishes:
+- Clean
+- Modern
+- Structured
+- Minimal
+- Small controlled pops of red for the brand
+- Strong material/product imagery
+- Premium leather textures
+- Automotive, furnishing, footwear and leather-goods imagery
+- CAD/product visualization for market segments
+
+COLOR SYSTEM:
+- Warm ivory/off-white background
+- Deep espresso brown
+- Warm camel/tan
+- Burgundy / dark wine
+- Very restrained Mayur red accent
+- Charcoal black
+- Soft beige
+Avoid excessive colors.
+Red should be used only for active states, tiny rules, buttons, links and important highlights.
+
+TYPOGRAPHY:
+Use an elegant high-contrast serif for major headings and a clean modern sans-serif for body/navigation.
+Large editorial headlines.
+Generous whitespace.
+Thin rules.
+Very subtle typography hierarchy.
+Do not use overly rounded SaaS-style UI.
+
+GLOBAL HEADER:
+Create a premium horizontal header.
+Left:
+Mayur Uniquoters logo.
+
+Center/right navigation:
+ABOUT
+MARKET SEGMENTS
+PLANTS
+SUSTAINABILITY
+GLOBAL PRESENCE
+NEWS & MEDIA
+
+Use a warm camel header background.
+Keep navigation minimal and elegant.
+Active navigation should use a subtle red underline.
+
+PAGE 1 — ABOUT US
+
+Create a long-form editorial About Us page.
+
+SECTION 1 — HERO:
+Use a full-width cinematic automotive leather interior image.
+The leather should be the visual hero rather than the company building.
+
+Overlay a short headline:
+"CRAFTING MATERIALS THAT MOVE THE WORLD"
+
+Supporting text should communicate that Mayur Uniquoters develops/manufactures premium leather and material solutions for multiple industries.
+
+Use a minimal CTA:
+EXPLORE OUR STORY
+
+Add subtle scroll indicator.
+
+SECTION 2 — ABOUT MAYUR:
+Create an asymmetric editorial composition.
+
+Left:
+Large vertical close-up image of premium leather/fabric.
+
+Right:
+"About Us"
+
+Short corporate introduction.
+
+Add a small numerical/statistical strip below:
+GLOBAL PRESENCE
+YEARS OF EXPERTISE
+MARKET SEGMENTS
+etc.
+
+Do not invent numerical values.
+Use tasteful placeholders if the source does not provide actual figures.
+
+SECTION 3 — MATERIAL STORY:
+Instead of a conventional grid, create a large horizontal visual composition showing:
+- leather folds
+- leather rolls
+- surface textures
+- color swatches
+- automotive leather
+- furnishing leather
+
+Add small editorial captions explaining material craftsmanship.
+
+SECTION 4 — VISION + MISSION:
+Create two large side-by-side editorial panels.
+
+VISION
+MISSION
+
+Use one large supporting image spanning both sections.
+Keep text short and premium.
+
+SECTION 5 — VALUES:
+Create 6 value items in a horizontal grid.
+
+Each item:
+small line icon
+value title
+one-line explanation
+
+Use thin red rules between items.
+
+SECTION 6 — HISTORY:
+Create an elegant horizontal timeline.
+
+2022
+2023
+2024
+2025
+
+Use image cards alternating above/below the timeline.
+Each year should contain:
+year
+image
+short description
+
+Use only the dates/content represented in the supplied reference material.
+Where actual copy is unavailable, use realistic content placeholders clearly marked for replacement.
+
+SECTION 7 — FOUNDER:
+Create a large editorial founder section.
+
+Large portrait image on left.
+On right:
+FOUNDER
+name
+short biography
+small "READ MORE" button.
+
+Add a thin horizontal separator.
+
+SECTION 8 — BOARD MEMBERS:
+Create a horizontally scrollable board-member carousel.
+
+Use professional portrait cards.
+Name and designation underneath.
+
+Cards should feel like premium editorial profile cards rather than generic corporate cards.
+
+SECTION 9 — POLICIES & CERTIFICATIONS:
+Create a clean certification/document gallery.
+
+Show certificate/document thumbnails in a horizontal row.
+Each card should have:
+certificate preview
+certificate name
+VIEW CERTIFICATE
+
+SECTION 10 — INVESTORS:
+Large portrait/image section with text beside it.
+Use a sophisticated asymmetric layout.
+
+SECTION 11 — CUSTOMER TESTIMONIALS:
+Create three editorial testimonial cards.
+
+Use oversized quotation marks.
+Short testimonial.
+Customer/company name.
+Small avatar/logo.
+
+Do not make this look like a SaaS review carousel.
+
+FOOTER:
+Warm camel background.
+Minimal multi-column footer.
+Company links.
+Career.
+FAQ.
+Contact Us.
+Phone/email.
+Copyright.
+
+PAGE 2 — PRODUCTS & CATEGORY LISTING
+
+This page should feel like a luxury material/product catalogue.
+
+HERO:
+Full-width cinematic leather/material image.
+
+Headline:
+"MARKET SEGMENTS"
+
+Supporting copy:
+"Materials engineered for the worlds that surround us."
+
+Below the hero create a category navigation:
+
+FURNISHING
+AUTOMOTIVE
+FOOTWEAR
+LEATHER GOODS
+
+Active category uses a red underline.
+
+MAIN CATEGORY SECTION:
+Create an editorial split layout.
+
+Left:
+Large image/collage representing the selected market.
+
+Right:
+Category title "Automotive"
+
+Then an accordion/list:
+Cars
+3 Wheelers
+2 Wheelers
+Commercial Vehicles
+Train
+Marine
+Tractors
+
+Each row has:
+category name
+thin divider
+minimal red chevron
+
+Make the accordion interactive.
+
+PRODUCT SHOWCASE:
+Heading:
+"OUR PRODUCTS"
+
+Create a large featured material/CAD presentation.
+
+Left:
+Large circular or organic material swatch / CAD product visualization.
+
+Right:
+Product Name
+short description
+Characteristic 01
+Characteristic 02
+
+Below:
+horizontal material swatch selector.
+
+Show:
+black
+beige
+green
+brown
+etc.
+
+Do not invent product names.
+Use placeholder names that are clearly editable.
+
+Add carousel pagination.
+
+PRODUCT GRID:
+Create a premium catalogue grid containing product/CAD cards.
+
+Each card:
+CAD/product visualization
+product name
+material category
+small VIEW PRODUCT link
+
+Use generous whitespace and editorial spacing.
+
+IMPORTANT:
+The PDF says the company manufactures leather and will require CADs for products.
+Therefore, design the product area so that actual CAD renders can easily replace the imagery later.
+
+INTERACTION:
+- Category tabs switch active market segment
+- Accordion expands subcategories
+- Product swatches update selected material
+- Product cards hover with subtle image scale
+- Buttons have elegant micro-interactions
+- Horizontal product carousels should work
+
+RESPONSIVE:
+Design desktop-first at 1440px width.
+Also make the layout responsive for tablet and mobile.
+
+VISUAL QUALITY:
+Extremely polished.
+Luxury automotive/editorial aesthetic.
+No gradients unless extremely subtle.
+No glassmorphism.
+No excessive rounded cards.
+No generic startup UI.
+No excessive shadows.
+Use photography, material textures and typography as the main visual language.
+
+The final result should feel like a premium global leather manufacturer, positioned between luxury automotive, fashion and high-end material design.
