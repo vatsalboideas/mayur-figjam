@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { logo } from '../assets/images'
 
 interface HeaderProps {
   activePage: 'about' | 'products'
@@ -21,25 +22,13 @@ export default function Header({ activePage, onNavigate }: HeaderProps) {
     <header style={{ backgroundColor: '#C4A265' }} className="sticky top-0 z-50 shadow-sm">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-16">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
           <button
             onClick={() => onNavigate('about')}
-            className="flex items-center gap-3 shrink-0 group"
+            className="flex items-center shrink-0"
           >
-            <div className="flex flex-col items-center justify-center w-9 h-9 border-2 border-[#1C1008] bg-[#1C1008]">
-              <span className="font-serif font-bold text-[#C4A265] text-sm leading-none">M</span>
-            </div>
-            <div className="hidden sm:block">
-              <p className="font-serif font-semibold text-[#1C1008] text-xs leading-tight tracking-widest uppercase">
-                MAYUR
-              </p>
-              <p className="font-sans text-[#1C1008] text-[9px] leading-tight tracking-[0.2em] uppercase opacity-80">
-                UNIQUOTERS LIMITED
-              </p>
-            </div>
+            <img src={logo} alt="Mayur Uniquoters Limited" className="h-9 lg:h-11 w-auto" />
           </button>
 
-          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8">
             {navItems.map((item) => {
               const isActive =
@@ -64,7 +53,6 @@ export default function Header({ activePage, onNavigate }: HeaderProps) {
             })}
           </nav>
 
-          {/* Mobile menu toggle */}
           <button
             className="lg:hidden flex flex-col gap-1.5 p-2"
             onClick={() => setMenuOpen(!menuOpen)}
@@ -76,7 +64,6 @@ export default function Header({ activePage, onNavigate }: HeaderProps) {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div style={{ backgroundColor: '#B8903A' }} className="lg:hidden border-t border-[#A88445]">
           <div className="px-8 py-4 flex flex-col gap-4">

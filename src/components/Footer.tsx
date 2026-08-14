@@ -1,3 +1,5 @@
+import { logo } from '../assets/images'
+
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#C4A265' }} className="pt-16 pb-8">
@@ -5,15 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 pb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <div className="flex items-center justify-center w-9 h-9 bg-[#1C1008]">
-                <span className="font-serif font-bold text-[#C4A265] text-sm">M</span>
-              </div>
-              <div>
-                <p className="font-serif font-semibold text-[#1C1008] text-xs tracking-widest uppercase">MAYUR</p>
-                <p className="font-sans text-[#1C1008] text-[9px] tracking-[0.2em] uppercase opacity-70">UNIQUOTERS LIMITED</p>
-              </div>
-            </div>
+            <img src={logo} alt="Mayur Uniquoters Limited" className="h-10 w-auto mb-5" />
             <p className="font-sans text-[#2C2418] text-xs leading-relaxed opacity-80 max-w-[220px]">
               Premium leather and material solutions for automotive, furnishing, footwear and leather goods industries worldwide.
             </p>

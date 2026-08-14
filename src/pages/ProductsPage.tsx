@@ -1,44 +1,30 @@
 import { useState } from 'react'
-
-const IMGS = {
-  heroFurnishing: 'https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?w=1800&h=900&fit=crop&auto=format',
-  autoInterior: 'https://images.unsplash.com/photo-1643142314404-32a911f3ede2?w=900&h=700&fit=crop&auto=format',
-  autoSeat: 'https://images.unsplash.com/photo-1582519366734-82dac0fcc12d?w=900&h=700&fit=crop&auto=format',
-  furnishSofa: 'https://images.unsplash.com/photo-1549187774-b4e9b0445b41?w=900&h=700&fit=crop&auto=format',
-  furnishRoom: 'https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?w=900&h=700&fit=crop&auto=format',
-  footwear: 'https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=900&h=700&fit=crop&auto=format',
-  shoes: 'https://images.unsplash.com/photo-1668069226492-508742b03147?w=900&h=700&fit=crop&auto=format',
-  bag: 'https://images.unsplash.com/photo-1705909237050-7a7625b47fac?w=900&h=700&fit=crop&auto=format',
-  bagWhite: 'https://images.unsplash.com/photo-1682745230951-8a5aa9a474a0?w=900&h=700&fit=crop&auto=format',
-  swatchMain: 'https://images.unsplash.com/photo-1571829604981-ea159f94e5ad?w=600&h=600&fit=crop&auto=format',
-  swatchDark: 'https://images.unsplash.com/photo-1716295177956-420a647c83ac?w=600&h=600&fit=crop&auto=format',
-  swatchMulti: 'https://images.unsplash.com/photo-1573227896778-8f378c4029d4?w=600&h=600&fit=crop&auto=format',
-}
+import { images as IMGS } from '../assets/images'
 
 type Segment = 'Automotive' | 'Furnishing' | 'Footwear' | 'Leather Goods'
 
 const segments: Record<Segment, { hero: string; image: string; subcategories: string[]; desc: string }> = {
   Automotive: {
-    hero: IMGS.autoInterior,
-    image: IMGS.autoSeat,
+    hero: IMGS.heroCarousel1,
+    image: IMGS.vision,
     subcategories: ['Cars', '3 Wheelers', '2 Wheelers', 'Commercial Vehicles', 'Train', 'Marine', 'Tractors'],
     desc: 'Engineering-grade synthetic leather for every form of transport — from premium passenger vehicles to commercial fleets. Designed to exceed OEM specifications for abrasion resistance, UV stability, and grain consistency.',
   },
   Furnishing: {
-    hero: IMGS.furnishRoom,
-    image: IMGS.furnishSofa,
+    hero: IMGS.furnishHero,
+    image: IMGS.furnishCategory,
     subcategories: ['Residential', 'Work Place', 'Restaurants & Retails', 'Spas', 'Stadiums & Theatre', 'Poolside & Outdoors'],
     desc: 'Premium upholstery materials for residential and contract environments. Designed for durability, aesthetics, and comfort — meeting demanding fire, abrasion and stain-resistance standards.',
   },
   Footwear: {
-    hero: IMGS.shoes,
-    image: IMGS.footwear,
+    hero: IMGS.leatherGoods,
+    image: IMGS.leatherTexture,
     subcategories: ['Sports & Athletic', 'Formal & Dress', 'Casual & Lifestyle', 'Industrial Safety', 'Children\'s Footwear', 'Sandals & Slippers'],
     desc: 'Lightweight, breathable and highly flexible synthetic leather solutions for every footwear category — from performance athletic wear to high-end fashion and safety footwear.',
   },
   'Leather Goods': {
-    hero: IMGS.bag,
-    image: IMGS.bagWhite,
+    hero: IMGS.leatherGoods,
+    image: IMGS.leatherClose,
     subcategories: ['Handbags & Purses', 'Wallets & Cardholders', 'Belts & Accessories', 'Travel Luggage', 'Office & Laptop Bags', 'Fashion Accessories'],
     desc: 'Refined, supple materials with rich grain characteristics for premium leather goods. Our portfolio includes both classic full-grain looks and contemporary finishes for the fashion and lifestyle market.',
   },
@@ -54,13 +40,21 @@ const swatchColors = [
   { label: 'Slate', hex: '#4A5568' },
 ]
 
+const productSwatches = [
+  IMGS.furnishProduct1,
+  IMGS.furnishProduct2,
+  IMGS.furnishProduct3,
+  IMGS.furnishProduct4,
+  IMGS.furnishProduct5,
+]
+
 const productCards = [
-  { name: 'Leatherite Pro — Automotive Grade', category: 'Automotive', img: IMGS.autoSeat },
-  { name: 'Luxurino — Furnishing Collection', category: 'Furnishing', img: IMGS.furnishSofa },
-  { name: 'FlexSole — Footwear Series', category: 'Footwear', img: IMGS.footwear },
-  { name: 'Lumina — Leather Goods', category: 'Leather Goods', img: IMGS.bag },
-  { name: 'Duracoat — Commercial Grade', category: 'Automotive', img: IMGS.autoInterior },
-  { name: 'Nuvelo — Interior Textiles', category: 'Furnishing', img: IMGS.furnishRoom },
+  { name: 'Leatherite Pro — Automotive Grade', category: 'Automotive', img: IMGS.heroCarousel1 },
+  { name: 'Luxurino — Furnishing Collection', category: 'Furnishing', img: IMGS.furnishCategory },
+  { name: 'FlexSole — Footwear Series', category: 'Footwear', img: IMGS.leatherGoods },
+  { name: 'Lumina — Leather Goods', category: 'Leather Goods', img: IMGS.leatherTexture },
+  { name: 'Duracoat — Commercial Grade', category: 'Automotive', img: IMGS.vision },
+  { name: 'Nuvelo — Interior Textiles', category: 'Furnishing', img: IMGS.furnishHero },
 ]
 
 export default function ProductsPage() {
@@ -197,9 +191,9 @@ export default function ProductsPage() {
             {/* Left: circular swatch */}
             <div className="flex justify-center">
               <div className="relative">
-                <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[#D4B47A] shadow-xl">
+                <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[#D4B47A] shadow-xl bg-black">
                   <img
-                    src={[IMGS.swatchMain, IMGS.swatchDark, IMGS.swatchMulti][activeSwatch % 3]}
+                    src={productSwatches[activeSwatch % productSwatches.length]}
                     alt="Material swatch"
                     className="w-full h-full object-cover transition-all duration-500"
                   />

@@ -1,7 +1,11 @@
 {
-  "description": "Streamline project management by checking requirements and generating actionable tasks, enhancing productivity for teams and individuals.",
+  "title": "About Us | Mayur Uniquoters Limited",
+  "description": "Mayur Uniquoters Limited develops and manufactures premium synthetic leather for automotive, furnishing, footwear, and leather goods industries across the globe.",
   "robots": {
     "index": false
+  },
+  "icons": {
+    "icon": "/favicon.svg"
   },
   "accessibility": {
     "addBypassLinks": false,
